@@ -9,18 +9,18 @@ nav buttons in small screen
 how to control flex wrap
 how to move my navbar to b responsive esp RHS
 my project img is not filling screen size
-i need all the elements to fill the same size no matter the img size
+
 
 
 
 
 
 */
-
-
 const navBtn = document.getElementById("nav-btn")
-
+const navList =document.querySelector(".nav-list")
 
 navBtn.addEventListener("click", function (){
-    navBtn.classList.toggle("show-li")
+    navList.classList.toggle("active");
 })
+
+document.querySelector('header').style.height = document.querySelector('.navbar').getBoundingClientRect().height + 'px';
