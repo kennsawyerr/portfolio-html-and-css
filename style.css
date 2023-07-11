@@ -171,12 +171,13 @@
   }
   
   .project-preview {
-  background-color: #000;
+  background-color: white;
+  box-shadow:  black 4px;
   color: #fff;
   font-size: 2rem;
-  padding: 3px;
+  padding: 15px;
+  flex-basis: 220px;
   text-align: center;
-  height: 100%;
   display: flex;
   flex-direction: column;
   }
@@ -184,9 +185,7 @@
   
   
   .project-preview img {  
-    max-width: 100%;
-    max-height: calc(100% - 20px);
-    height: 200px;
+    max-width: 100%;  
     object-fit: cover;
   }
   
