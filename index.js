@@ -16,5 +16,5 @@ document.querySelector('header').style.height = document.querySelector('.navbar'
     port images interval 7
     port project page 8
     remove projects btn 9
-    sneskers dropdown cart 10
+    sneskers dropdown cart
   */
