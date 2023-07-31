@@ -7,6 +7,8 @@
     --font-medium: 2rem;
     --font-logo: 'Dancing Script', cursive;
   }
+
+  
   
   /* Global Styles */
   *, ::after, ::before {
@@ -20,7 +22,8 @@
   body {
     margin: 0;
     padding: 0;
-    background-color: var(--bg);
+    /* background: linear-gradient(to top left, #33ccff 0%, #ffd26a 100%); */
+    background-color: #f7da8c;
     font-family: 'Roboto', sans-serif;
   }
   
@@ -46,6 +49,8 @@
     padding: 100px 0;
   }
   
+
+
   /* Utilities */
 
   .logo{
@@ -55,6 +60,7 @@
   .flex {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     
   }
   
@@ -78,14 +84,20 @@
 
   .Slides{
     display: none;
-    height: fit-content;
+    height: auto;
+    width: 70%;
+    margin: 0 auto;
     
   }
 
+  .Slides img{
+    width: 100%;
+  }
+
   .slideContainer{
-    min-width: 500px;
-    max-width: 500px;
-  
+   width: 38%;
+   padding: 0;
+   margin: 0;
   }
 
 
@@ -132,9 +144,9 @@
     display: none;
     position: fixed;
     top: 0;
-    left: 10%;
-    right: 10%;
-    background-color: var(--bg);
+    left: 0%;
+    right: 0%;
+    background-color: #0096FF;
     padding: 0.5px 0;
     margin: 0 auto;
     display: flex;
@@ -176,7 +188,9 @@
 
   /* Toolbox */
 
-  
+  #tools{
+    background-color: #F4F5FA;
+  }
 
   /* Toolbox ends */
   
@@ -227,6 +241,10 @@
   }
   
   /* Projects */
+  /* Projects */
+  /* Projects */
+  /* Projects */
+  /* Projects */
   #project-header {
     font-size: 2rem;
     text-align: center;
@@ -235,38 +253,81 @@
   
   .project-preview {
   background-color: white;
-  box-shadow:  black 4px;
+  /* box-shadow: 0px 8px 6px 0px black; */
   color: #fff;
   font-size: 2rem;
-  padding: 15px;
-  flex-basis: 220px;
   text-align: center;
   display: flex;
   flex-direction: column;
+  border-radius: 15px;
+  height: 400px;
+  min-height: 300px;
+  background-color: #0096FF;
   }
   
+
+
   
   
   .project-preview img {  
     max-width: 100%;  
     object-fit: cover;
+    max-height: 40%;
+    min-height: 40%;
+    border-radius: 15px 15px 0  0;
   }
   
   #project-section {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 10px;
+  /* grid-template: repeat(1, 100%)/repeat(3, 1fr); */
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-auto-rows: auto;
+  grid-gap: 40px;
+  
+ 
+}
+
+/* 
+viewLiveSiteh6 left 0
+h2 left 0
+
+
+
+languagesUsed left0  flex   view code right
+*/
+
+li{
+  padding: 0;
+  margin: 0;
 }
   
-  #project-section p{
+  #project-section p
+{  }
+
+  .text{
+    overflow: hidden;
+    height: auto;
     margin: 0;
-    padding: 0%;
-    color:red;
+    padding: 0 12px;
+    color:black;
+    background-color: white;
+    font-size: 16px;
   }
 
-  @media (max-width: 768px) {
+   /*  */
+   /*  */
+   /*  */
+   /*  */
+   /*  */
+   /*  */
+
+  @media (max-width: 900px) {
     #project-section {
       grid-template-columns: repeat(2, 1fr);
+    }
+
+    .slideContainer{
+      width: 100%;
     }
   }
   
@@ -274,29 +335,46 @@
     #project-section {
       grid-template-columns: 1fr;
     }
+    .slideContainer{
+      width: 100%;
+    }
   }
   
   
 /* toolbox */
+
 .grid{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+  /* grid-template: repeat(2, auto)/ repeat(5, 1fr); */
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-auto-rows: 100px;
   gap: 10px; 
-  padding: 20px; 
+  padding: 40px; 
   max-width: 1100px;
 }
 
 #tools img{
   margin:0  auto;
   margin-bottom: 0;
-  align-content: center;
+ border: 2px solid blue;
+ object-fit: cover;
 }
 
 #tools p{
-  background-color: pink;
+ 
   text-align: center;
-  width: fit-content;
   margin: 0;
+}
+
+#tools li{
+  border: 1px solid ;
+  max-width: 150px;
+  text-align: center;
+
+}
+
+ #tools .fab{
+  font-size: 3rem;
 }
 
 /*  */
