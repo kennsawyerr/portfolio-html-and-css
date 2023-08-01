@@ -211,7 +211,7 @@
 
 
   .nav-btn{
-    display: none;
+    visibility: hidden;
     position: absolute;
     display: grid;
     align-content: center;
