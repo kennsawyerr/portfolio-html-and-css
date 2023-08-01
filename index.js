@@ -17,14 +17,7 @@ document.querySelector('header').style.height = document.querySelector('.navbar'
 
 
 
-  /*    portfolio section 5
-    portfolio toolbox 6
-    port images interval 7
-    port project page 8
-    remove projects btn 9
-    sneskers dropdown cart
-
-  */
+  
 
     function SlideShow(){
       let i;

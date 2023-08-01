@@ -30,6 +30,10 @@
     text-transform: uppercase;
   }
   
+  img{
+    width: 100%;
+  }
+
   body {
     margin: 0;
     padding: 0;
@@ -37,9 +41,36 @@
     background-color: #f7da8c;
     font-family: 'Roboto', sans-serif;
   }
+
+
+  ul{
+    box-sizing: border-box;
+    list-style: none;
+  }
+
+  
+  li:hover {
+    border: 0.5px dashed green;
+  }
+  
+  li{
+    border: 1px solid transparent;
+  }
+  
+  
+  section {
+    height: fit-content;
+    width: 100%;
+    border-bottom: 1px solid grey;
+  }
+  
+  section:nth-of-type(2) {
+    border-bottom: none;
+  }
   
   html {
     scroll-behavior: smooth;
+    user-select: none;
   }
   
   h1, h2, h3, h4, ul {
@@ -63,7 +94,6 @@
 
   
 
-
   /* Utilities */
 
   .logo{
@@ -77,6 +107,9 @@
     
   }
   
+  .marginRight{
+    margin-right: auto;
+  }
   .container {
     width: 80%;
     max-width: 1100px;
@@ -91,6 +124,41 @@
     justify-content: center;
     background-color: var(--bg);
   }
+
+
+
+     
+  /* Developer Section */
+  h1 {
+    font-size: 3rem;
+  }
+  
+  .developer-about {
+    width: 62%;
+  }
+  
+ 
+  .hero-img {
+    border-radius: 8px;
+    width: 50%;
+    height: 400px;
+    object-fit: cover;
+  
+  }
+  
+  .shortline {
+    border-top: 20px solid var(--blue);
+    width: 250px;
+    padding-bottom: 3rem;
+  }
+  
+  h2 {
+    color: var(--blue);
+  }
+  
+
+
+
 
   /* Slideshows */
 
@@ -137,15 +205,17 @@
     opacity: 0;
   }
 
-  .change .bar3{
+.change .bar3{
     transform: translate(-11px) , rotate(45deg);
   }
 
 
   .nav-btn{
-  display: grid;
-  align-content: center;
-  gap: 10%;
+    display: none;
+    position: absolute;
+    display: grid;
+    align-content: center;
+    gap: 10%;
   }
 
   .navbar {
@@ -173,21 +243,16 @@
   }
   
    nav ul {
-    box-sizing: border-box;
-    list-style: none;
+   
     display: flex;
     justify-content: flex-end;
-  }
-  
-   nav li:hover {
-    border: 0.5px dashed green;
   }
   
    nav li {
     padding: 3px;
     margin: 3px;
     font-size: 1.4rem;
-    border: 1px solid transparent;
+    
   }
 
   nav li:active{
@@ -200,54 +265,45 @@
     background-color: #F4F5FA;
   }
 
+.grid{
+  display: grid;
+  /* grid-template: repeat(2, auto)/ repeat(5, 1fr); */
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-auto-rows: 100px;
+  gap: 10px; 
+  padding: 40px; 
+  max-width: 1100px;
+}
+
+#tools img{
+  margin:0  auto;
+  margin-bottom: 0;
+ border: 2px solid blue;
+ object-fit: cover;
+}
+
+#tools p{
+ 
+  text-align: center;
+  margin: 0;
+}
+
+#tools li{
+  border: 1px solid ;
+  max-width: 150px;
+  text-align: center;
+
+}
+
+ #tools .fab{
+  font-size: 3rem;
+}
+
   /* Toolbox ends */
-  
-  /* Developer Section */
-  h1 {
-    font-size: 3rem;
-  }
-  
-  .developer-about {
-    width: 62%;
-  }
-  
-  #developer-intro {
-  
-  }
-  
-  img {
-    max-width: 100%;
-  }
-  
-  /* Hero Image */
-  .hero-img {
-    border-radius: 8px;
-    width: 50%;
-    height: 400px;
-    object-fit: cover;
-  
-  }
-  
-  .shortline {
-    border-top: 20px solid var(--blue);
-    width: 250px;
-    padding-bottom: 3rem;
-  }
-  
-  section {
-    height: fit-content;
-    width: 100%;
-    border-bottom: 1px solid grey;
-  }
-  
-  section:nth-of-type(2) {
-    border-bottom: none;
-  }
-  
-  h2 {
-    color: var(--blue);
-  }
-  
+
+
+
+
   /* Projects */
   /* Projects */
   /* Projects */
@@ -261,13 +317,11 @@
   
   .project-preview {
   background-color: white;
-  /* box-shadow: 0px 8px 6px 0px black; */
   color: #fff;
-  font-size: 2rem;
   text-align: center;
   display: flex;
   flex-direction: column;
-  border-radius: 15px;
+  border-radius: 10px;
   height: 400px;
   min-height: 300px;
   background-color: #0096FF;
@@ -282,7 +336,7 @@
     object-fit: cover;
     max-height: 40%;
     min-height: 40%;
-    border-radius: 15px 15px 0  0;
+    border-radius: 12px 12px 0  0;
   }
   
   #project-section {
@@ -304,13 +358,11 @@ h2 left 0
 languagesUsed left0  flex   view code right
 */
 
-li{
+#project-section li{
   padding: 0;
   margin: 0;
 }
   
-  #project-section p
-{  }
 
   .text{
     overflow: hidden;
@@ -349,46 +401,14 @@ li{
   }
   
   
-/* toolbox */
 
-.grid{
-  display: grid;
-  /* grid-template: repeat(2, auto)/ repeat(5, 1fr); */
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  grid-auto-rows: 100px;
-  gap: 10px; 
-  padding: 40px; 
-  max-width: 1100px;
-}
-
-#tools img{
-  margin:0  auto;
-  margin-bottom: 0;
- border: 2px solid blue;
- object-fit: cover;
-}
-
-#tools p{
- 
-  text-align: center;
-  margin: 0;
-}
-
-#tools li{
-  border: 1px solid ;
-  max-width: 150px;
-  text-align: center;
-
-}
-
- #tools .fab{
-  font-size: 3rem;
-}
 
 /*  */
 /*  */
 /*  */
 /*  */
+
+
   /* Project Page */
   #mainProject .flex {
     gap: 20%;
