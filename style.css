@@ -530,7 +530,7 @@ languagesUsed left0  flex   view code right
     }
 
     #nav-btn {
-        display: block;
+      
         margin: 0;
         visibility: unset;
         right: 5px;
@@ -569,27 +569,7 @@ languagesUsed left0  flex   view code right
   
     .flex {
       display: block;
-     } /*
-  
-    #project-section {
-      display: block;
-      margin: auto;
-    }
-  
-    #project-section img {
-      width: 100%;
-    }
-
-    .project-preview img {
-        height: calc(100% - 20%);
-        width: 100%;
-        object-fit: cover;
-      }
-  
-    .project-preview {
-      width: 100%;
-      margin: 1rem auto ;
-    } */
+     } 
   
     .project-description {
       width: inherit;
@@ -620,7 +600,7 @@ languagesUsed left0  flex   view code right
       }  */
       
     #nav-btn {
-      display: block;
+    
       margin: 0;
       visibility: unset;
       right: 5px;
